@@ -21,7 +21,6 @@ def server_command(cmd):
     global process
     process.stdin.write(bytes(cmd+"\n", "utf-8"))
     process.stdin.flush()
-    process.stdout.readline()
 
 def readserver():
     global process
@@ -37,3 +36,4 @@ while True:
     command = input()
     command = command.lower()
     threading.Thread(target=server_command, args=((command,))).start()
+    time.sleep(0.1)
