@@ -5,16 +5,16 @@ import subprocess
 import os
 import threading
 import time
+import shlex
 
-os.system("cls")
+os.system("clear")
 
 '''
 This is hard coded for now
 '''
 
-executable = 'java -jar server.jar nogui'
-minecraft_dir = (
-    r'F:\Code\Python\New Projects\PyAdmin\server')
+minecraft_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "/server" # This will go back one more directory for testing
+print(minecraft_dir)
 
 
 def server_command(cmd):
@@ -29,7 +29,7 @@ def readserver():
 
 
 os.chdir(minecraft_dir)
-process = subprocess.Popen(executable, stdin=subprocess.PIPE, stdout=subprocess.PIPE)  # , stdout=subprocess.PIPE)
+process = subprocess.Popen(shlex.split('java -jar -Xmx2G server.jar nogui'), stdin=subprocess.PIPE, stdout=subprocess.PIPE)  # , stdout=subprocess.PIPE)
 threading.Thread(target=readserver).start()
 
 while True:
