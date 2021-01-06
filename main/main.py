@@ -1,39 +1,42 @@
-'''
-This is a beta version of this software
-'''
-import subprocess
-import os
-import threading
-import time
-import shlex
+import api, os, threading, time, sys
 
-os.system("clear")
+Server = api.APIRequest()
 
-'''
-This is hard coded for now
-'''
+def quitPy():
+    Server.StopServer()
 
-minecraft_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "/server" # This will go back one more directory for testing
-print(minecraft_dir)
+def returnStat():
+    print(Server.Stats)
 
+def restartServer():
+    Server.RestartServer()
 
-def server_command(cmd):
-    global process
-    process.stdin.write(bytes(cmd+"\n", "utf-8"))
-    process.stdin.flush()
+def startServer():
+    Server.StartServer()
 
-def readserver():
-    global process
+cmds = {"/quit" : quitPy,
+        "/stats" : returnStat,
+        "/restart" : restartServer,
+        "/start" : startServer}
+
+def readServer():
+    lastmsg = None
     while True:
-        print(process.stdout.readline().decode('utf-8').strip("\n"))
+        if len(Server.messages) != 0:
+            if Server.messages[len(Server.messages)-1] != lastmsg:
+                print(Server.messages[len(Server.messages)-1])
+                lastmsg = Server.messages[len(Server.messages)-1]
+        
+Server.StartServer()
 
-
-os.chdir(minecraft_dir)
-process = subprocess.Popen(shlex.split('java -jar -Xmx2G server.jar nogui'), stdin=subprocess.PIPE, stdout=subprocess.PIPE)  # , stdout=subprocess.PIPE)
-threading.Thread(target=readserver).start()
+threading.Thread(target=readServer).start()
 
 while True:
     command = input()
     command = command.lower()
-    threading.Thread(target=server_command, args=((command,))).start()
-    time.sleep(0.1)
+    if command in list(cmds.keys()):
+        cmds[command]()
+    else:
+        Server.SendToServer(command)
+
+
