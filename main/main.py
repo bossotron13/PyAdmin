@@ -1,25 +1,12 @@
-import api
 import os, threading, time, sys
+import main.definitions as definitions
 
+Server = definitions.Server
 
-Server = api.APIRequest()
-
-def quitPy():
-    Server.StopServer()
-
-def returnStat():
-    print(Server.Stats)
-
-def restartServer():
-    Server.RestartServer()
-
-def startServer():
-    Server.StartServer()
-
-cmds = {"/quit" : quitPy,
-        "/stats" : returnStat,
-        "/restart" : restartServer,
-        "/start" : startServer}
+cmds = {"/quit" : definitions.quitPy,
+        "/stats" : definitions.returnStat,
+        "/restart" : definitions.restartServer,
+        "/start" : definitions.startServer}
 
 def readServer():
     lastmsg = None
@@ -29,16 +16,15 @@ def readServer():
                 print(Server.messages[len(Server.messages)-1])
                 lastmsg = Server.messages[len(Server.messages)-1]
 
-if __name__ == "__main__":
-    Server.StartServer()
+Server.StartServer()
 
-    threading.Thread(target=readServer).start()
-    while True:
-        command = input()
-        command = command.lower()
-        if command in list(cmds.keys()):
-            cmds[command]()
-        else:
-            Server.SendToServer(command)
+threading.Thread(target=readServer).start()
+while True:
+    command = input()
+    command = command.lower()
+    if command in list(cmds.keys()):
+        cmds[command]()
+    else:
+        Server.SendToServer(command)
 
 

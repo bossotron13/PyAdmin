@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request, redirect, url_for
 import os, logging
-from main import quitPy
-
+import main.website.test as test
 
 app = Flask(__name__)
+
+Api =  test.returnApi()
 
 app.logger.disabled = True
 log = logging.getLogger('werkzeug')
@@ -16,7 +17,7 @@ def index():
 
 @app.route("/stop")
 def stopServer():
-    quitPy()
+    Api.StopServer()
     return redirect('/')
 
 '''
