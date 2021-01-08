@@ -61,7 +61,7 @@ class APIRequest:
             self.StartServer()
             
     def RequestStatus(self):
-        pass
+        return self.Stats
     
 
 '''

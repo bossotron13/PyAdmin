@@ -8,7 +8,7 @@ def quitPy():
 
 
 def returnStat():
-    print(Server.Stats)
+    Server.RequestStatus()
 
 
 def restartServer():
