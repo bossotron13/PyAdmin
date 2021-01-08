@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Pyadmin Webpanel</title>
+        <h1 id = "title">Pyadmin Dev</h1>
+    </head>
+    <body>
+        <button class = "Server-Life" id = "start">Start</button>
+        <button class="Server-Life" id="stop" onclic="test()">Stop</button>
+        <button class="Server-Life" id="restart">Restart</button>
+    </body>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+</html> 

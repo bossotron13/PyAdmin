@@ -1,4 +1,6 @@
-import api, os, threading, time, sys
+import api
+import os, threading, time, sys
+
 
 Server = api.APIRequest()
 
@@ -26,17 +28,17 @@ def readServer():
             if Server.messages[len(Server.messages)-1] != lastmsg:
                 print(Server.messages[len(Server.messages)-1])
                 lastmsg = Server.messages[len(Server.messages)-1]
-        
-Server.StartServer()
 
-threading.Thread(target=readServer).start()
+if __name__ == "__main__":
+    Server.StartServer()
 
-while True:
-    command = input()
-    command = command.lower()
-    if command in list(cmds.keys()):
-        cmds[command]()
-    else:
-        Server.SendToServer(command)
+    threading.Thread(target=readServer).start()
+    while True:
+        command = input()
+        command = command.lower()
+        if command in list(cmds.keys()):
+            cmds[command]()
+        else:
+            Server.SendToServer(command)
 
 
