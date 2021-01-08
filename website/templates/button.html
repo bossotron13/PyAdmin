@@ -1,13 +1,8 @@
 <html>
-    <div class="container">
-        <h2>Button Pressed: {{ButtonPressed}}</h2>
-        <button onclick = "meme()" type = "button" id = "meme">Click</button>
-    </div>
-    <script>
-        function meme(){
-            var a = {{ButtonPressed}} ;
-            alert(a)
-        }
-
-    </script>   
+    <header>
+        <title>Pyadmin Webpanel</title>
+        <h1 id = "NameTitle">Pyadmin Dev</h1>
+    </header>
+    <script src="{{url_for('static', filename='index.js')}}"></script>
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='style.css') }}"/>
 </html> 

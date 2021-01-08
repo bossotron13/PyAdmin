@@ -1,7 +1,5 @@
-from flask import Flask
-from flask import render_template
-from flask import request
-from flask_assets import Bundle, Environment
+from flask import Flask, render_template, request
+from livereload import Server
 import os
 
 
@@ -27,4 +25,4 @@ def handle_form():
 
 
 if __name__ == "__main__":
-    app.run(port=80)
+    app.run(port=5000, debug=True)
