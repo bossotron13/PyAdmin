@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 import os, logging
-import main.website.test as test
+import main.website.ApiShare as test
 
 app = Flask(__name__)
 

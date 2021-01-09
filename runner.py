@@ -8,7 +8,7 @@ def WebServer():
 
 def SetServer():
     import main.definitions as holder
-    import main.website.test as server
+    import main.website.ApiShare as server
     server.SetApi(holder.Server)
 
 

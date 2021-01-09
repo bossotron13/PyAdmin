@@ -2,7 +2,6 @@ import main.api as api
 
 Server = api.APIRequest()
 
-
 def quitPy():
     Server.StopServer()
 
