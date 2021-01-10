@@ -1,39 +1,30 @@
-'''
-This is a beta version of this software
-'''
-import subprocess
-import os
-import threading
-import time
+import os, threading, time, sys
+import main.definitions as definitions
 
-os.system("cls")
+Server = definitions.Server
 
-'''
-This is hard coded for now
-'''
+cmds = {"/quit" : definitions.quitPy,
+        "/stats" : definitions.returnStat,
+        "/restart" : definitions.restartServer,
+        "/start" : definitions.startServer}
 
-executable = 'java -jar server.jar nogui'
-minecraft_dir = (
-    r'F:\Code\Python\New Projects\PyAdmin\server')
-
-
-def server_command(cmd):
-    global process
-    process.stdin.write(bytes(cmd+"\n", "utf-8"))
-    process.stdin.flush()
-
-def readserver():
-    global process
+def readServer():
+    lastmsg = None
     while True:
-        print(process.stdout.readline().decode('utf-8').strip("\n"))
+        if len(Server.messages) != 0:
+            if Server.messages[len(Server.messages)-1] != lastmsg:
+                print(Server.messages[len(Server.messages)-1])
+                lastmsg = Server.messages[len(Server.messages)-1]
 
+Server.StartServer()
 
-os.chdir(minecraft_dir)
-process = subprocess.Popen(executable, stdin=subprocess.PIPE, stdout=subprocess.PIPE)  # , stdout=subprocess.PIPE)
-threading.Thread(target=readserver).start()
-
+threading.Thread(target=readServer).start()
 while True:
     command = input()
     command = command.lower()
-    threading.Thread(target=server_command, args=((command,))).start()
-    time.sleep(0.1)
+    if command in list(cmds.keys()):
+        cmds[command]()
+    else:
+        Server.SendToServer(command)
+
+

@@ -1,1 +1,1 @@
-PyAdmin
+memory_info
