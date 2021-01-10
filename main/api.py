@@ -7,7 +7,6 @@ import subprocess
 import shlex
 import sys
 import time
-import psutil
 
 class APIRequest:
     def __init__(self):

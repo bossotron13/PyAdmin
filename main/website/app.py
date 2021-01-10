@@ -39,4 +39,4 @@ def handle_form():
     return redirect('/')
 '''
 
-app.run(port=5000, host="192.168.1.146")
+app.run(port=5000, host="100.115.92.203")
