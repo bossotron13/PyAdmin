@@ -1,4 +1,4 @@
-import threading, time
+import threading, time, multiprocessing
 
 def MainRunner():
     import main.main
@@ -11,11 +11,11 @@ def SetServer():
     import main.website.ApiShare as server
     server.SetApi(holder.Server)
 
-
-threading.Thread(target=SetServer).start()
-time.sleep(1)
-print("Starting webserver\n")
-threading.Thread(target=WebServer).start()
-time.sleep(1)
-print("\n\n")
-threading.Thread(target=MainRunner).start()
+if __name__ == "__main__":
+    threading.Thread(target=SetServer).start()
+    time.sleep(1)
+    print("Starting webserver\n")
+    threading.Thread(target=WebServer).start()
+    time.sleep(1)
+    print("\n\n")
+    threading.Thread(target=MainRunner).start()

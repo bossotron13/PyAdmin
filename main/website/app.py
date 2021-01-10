@@ -1,19 +1,29 @@
 from flask import Flask, render_template, request, redirect, url_for
 import os, logging
-import main.website.ApiShare as test
+import main.website.ApiShare as ApiShare
 
 app = Flask(__name__)
 
-Api =  test.returnApi()
+Api =  ApiShare.returnApi()
 
-app.logger.disabled = True
-log = logging.getLogger('werkzeug')
-log.disabled = True
+
+
+def ReqStat():
+    return Api.RequestStatus()
 
 @app.route("/")
 def index():
-    return render_template("button.html")
+    return render_template("button.html", status = ReqStat())
 
+@app.route("/start")
+def startServer():
+    Api.StartServer()
+    return redirect('/')
+
+@app.route("/restart")
+def restartServer():
+    Api.RestartServer()
+    return redirect('/')
 
 @app.route("/stop")
 def stopServer():
@@ -29,4 +39,4 @@ def handle_form():
     return redirect('/')
 '''
 
-app.run(port=5000)
+app.run(port=5000, host="192.168.1.146")

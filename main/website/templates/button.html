@@ -1,14 +1,19 @@
 <html>
-    <head>
-        <title>Pyadmin Webpanel</title>
-        <h1 id = "title">Pyadmin Dev</h1>
-    </head>
     <body>
-        <button class = "Server-Life" id = "start">Start</button>
-        <button class="Server-Life" id="stop" onclic="test()">Stop</button>
-        <button class="Server-Life" id="restart">Restart</button>
+        <div class="Header">
+            <title>Pyadmin Webpanel</title>
+            <h1 id="title">Pyadmin Dev</h1>
+        </div>
+    
+        <button class="Server-Life" id="start" onclick="StartServer()">Start</button>
+        <button class="Server-Life" id="stop" onclick="StopServer()">Stop</button>
+        <button class="Server-Life" id="restart" onclick="RestartServer()">Restart</button>
     </body>
-
+    <script>
+        function returnStats(){
+            return "{{ status }}"
+        }
+    </script>
     <script src="{{ url_for('static', filename='main.js') }}"></script>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
 </html> 

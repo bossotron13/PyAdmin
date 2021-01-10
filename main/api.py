@@ -7,6 +7,7 @@ import subprocess
 import shlex
 import sys
 import time
+import psutil
 
 class APIRequest:
     def __init__(self):
@@ -47,11 +48,14 @@ class APIRequest:
                         self.Stats = list(self.AvalibleStats.keys())[list(self.AvalibleStats.values()).index(x)]
 
     def SendToServer(self, cmd):
-        if self.process.poll() == None:
-            self.process.stdin.write(bytes(cmd+"\n", "utf-8"))
-            self.process.stdin.flush()
-        else:
-            sys.exit()
+        try:
+            if self.process.poll() == None:
+                self.process.stdin.write(bytes(cmd+"\n", "utf-8"))
+                self.process.stdin.flush()
+            else:
+                sys.exit()
+        except:
+            return "Error"
 
     def RestartServer(self):
         self.StopServer()
