@@ -7,3 +7,222 @@
 [21:45:30] [main/INFO]: Reloading ResourceManager: Default
 [21:45:46] [Worker-Main-2/INFO]: Loaded 7 recipes
 [21:45:50] [Worker-Main-2/INFO]: Loaded 927 advancements
+[21:46:09] [Server thread/INFO]: Starting minecraft server version 1.16.4
+[21:46:09] [Server thread/INFO]: Loading properties
+[21:46:09] [Server thread/INFO]: Default game type: SURVIVAL
+[21:46:09] [Server thread/INFO]: Generating keypair
+[21:46:11] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:46:12] [Server thread/INFO]: Using epoll channel type
+[21:46:13] [Server thread/INFO]: Preparing level "world"
+[21:46:14] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:27] [Server thread/INFO]: Preparing spawn area: 0%
+[21:46:28] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[21:46:29] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Server thread/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:53] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[21:46:54] [Worker-Main-2/INFO]: Preparing spawn area: 8%
+[21:46:54] [Worker-Main-2/INFO]: Preparing spawn area: 13%
+[21:46:55] [Worker-Main-2/INFO]: Preparing spawn area: 20%
+[21:46:55] [Worker-Main-2/INFO]: Preparing spawn area: 26%
+[21:46:56] [Worker-Main-2/INFO]: Preparing spawn area: 31%
+[21:46:56] [Worker-Main-2/INFO]: Preparing spawn area: 33%
+[21:46:57] [Server thread/INFO]: Preparing spawn area: 38%
+[21:46:57] [Worker-Main-2/INFO]: Preparing spawn area: 40%
+[21:46:58] [Server thread/INFO]: Preparing spawn area: 42%
+[21:46:59] [Worker-Main-2/INFO]: Preparing spawn area: 49%
+[21:46:59] [Worker-Main-2/INFO]: Preparing spawn area: 49%
+[21:46:59] [Worker-Main-2/INFO]: Preparing spawn area: 50%
+[21:47:00] [Worker-Main-2/INFO]: Preparing spawn area: 51%
+[21:47:00] [Worker-Main-2/INFO]: Preparing spawn area: 51%
+[21:47:01] [Worker-Main-2/INFO]: Preparing spawn area: 52%
+[21:47:01] [Worker-Main-2/INFO]: Preparing spawn area: 52%
+[21:47:02] [Server thread/INFO]: Preparing spawn area: 52%
+[21:47:02] [Worker-Main-2/INFO]: Preparing spawn area: 53%
+[21:47:03] [Worker-Main-2/INFO]: Preparing spawn area: 55%
+[21:47:03] [Worker-Main-2/INFO]: Preparing spawn area: 55%
+[21:47:04] [Worker-Main-2/INFO]: Preparing spawn area: 55%
+[21:47:04] [Worker-Main-2/INFO]: Preparing spawn area: 55%
+[21:47:05] [Worker-Main-2/INFO]: Preparing spawn area: 56%
+[21:47:05] [Worker-Main-2/INFO]: Preparing spawn area: 56%
+[21:47:06] [Worker-Main-2/INFO]: Preparing spawn area: 56%
+[21:47:06] [Server thread/INFO]: Preparing spawn area: 57%
+[21:47:07] [Worker-Main-2/INFO]: Preparing spawn area: 58%
+[21:47:07] [Server thread/INFO]: Preparing spawn area: 59%
+[21:47:08] [Worker-Main-2/INFO]: Preparing spawn area: 59%
+[21:47:08] [Worker-Main-2/INFO]: Preparing spawn area: 60%
+[21:47:09] [Worker-Main-2/INFO]: Preparing spawn area: 62%
+[21:47:09] [Worker-Main-2/INFO]: Preparing spawn area: 62%
+[21:47:10] [Server thread/INFO]: Preparing spawn area: 63%
+[21:47:10] [Worker-Main-2/INFO]: Preparing spawn area: 64%
+[21:47:11] [Worker-Main-2/INFO]: Preparing spawn area: 64%
+[21:47:11] [Server thread/INFO]: Preparing spawn area: 65%
+[21:47:12] [Worker-Main-2/INFO]: Preparing spawn area: 67%
+[21:47:12] [Worker-Main-2/INFO]: Preparing spawn area: 69%
+[21:47:13] [Worker-Main-2/INFO]: Preparing spawn area: 69%
+[21:47:13] [Worker-Main-2/INFO]: Preparing spawn area: 70%
+[21:47:14] [Worker-Main-2/INFO]: Preparing spawn area: 72%
+[21:47:14] [Worker-Main-2/INFO]: Preparing spawn area: 74%
+[21:47:15] [Worker-Main-2/INFO]: Preparing spawn area: 74%
+[21:47:15] [Server thread/INFO]: Preparing spawn area: 76%
+[21:47:16] [Worker-Main-2/INFO]: Preparing spawn area: 78%
+[21:47:16] [Worker-Main-2/INFO]: Preparing spawn area: 79%
+[21:47:17] [Worker-Main-2/INFO]: Preparing spawn area: 79%
+[21:47:17] [Worker-Main-2/INFO]: Preparing spawn area: 79%
+[21:47:18] [Worker-Main-2/INFO]: Preparing spawn area: 79%
+[21:47:18] [Server thread/INFO]: Preparing spawn area: 80%
+[21:47:19] [Worker-Main-2/INFO]: Preparing spawn area: 86%
+[21:47:19] [Worker-Main-2/INFO]: Preparing spawn area: 87%
+[21:47:20] [Worker-Main-2/INFO]: Preparing spawn area: 87%
+[21:47:20] [Worker-Main-2/INFO]: Preparing spawn area: 87%
+[21:47:21] [Worker-Main-2/INFO]: Preparing spawn area: 87%
+[21:47:22] [Server thread/INFO]: Preparing spawn area: 87%
+[21:47:22] [Server thread/INFO]: Preparing spawn area: 87%
+[21:47:23] [Worker-Main-2/INFO]: Preparing spawn area: 87%
+[21:47:23] [Server thread/INFO]: Preparing spawn area: 87%
+[21:47:23] [Worker-Main-2/INFO]: Preparing spawn area: 87%
+[21:47:24] [Worker-Main-2/INFO]: Preparing spawn area: 87%
+[21:47:25] [Worker-Main-2/INFO]: Preparing spawn area: 87%
+[21:47:25] [Worker-Main-2/INFO]: Preparing spawn area: 87%
+[21:47:25] [Worker-Main-2/INFO]: Preparing spawn area: 87%
+[21:47:26] [Server thread/INFO]: Preparing spawn area: 87%
+[21:47:26] [Worker-Main-2/INFO]: Preparing spawn area: 87%
+[21:47:27] [Worker-Main-2/INFO]: Preparing spawn area: 88%
+[21:47:27] [Worker-Main-2/INFO]: Preparing spawn area: 88%
+[21:47:28] [Worker-Main-2/INFO]: Preparing spawn area: 88%
+[21:47:28] [Worker-Main-2/INFO]: Preparing spawn area: 88%
+[21:47:29] [Server thread/INFO]: Preparing spawn area: 88%
+[21:47:29] [Server thread/INFO]: Preparing spawn area: 88%
+[21:47:30] [Worker-Main-2/INFO]: Preparing spawn area: 89%
+[21:47:30] [Worker-Main-2/INFO]: Preparing spawn area: 89%
+[21:47:31] [Server thread/INFO]: Preparing spawn area: 89%
+[21:47:32] [Worker-Main-2/INFO]: Preparing spawn area: 89%
+[21:47:32] [Server thread/INFO]: Preparing spawn area: 89%
+[21:47:32] [Worker-Main-2/INFO]: Preparing spawn area: 89%
+[21:47:33] [Worker-Main-2/INFO]: Preparing spawn area: 89%
+[21:47:33] [Worker-Main-2/INFO]: Preparing spawn area: 89%
+[21:47:34] [Worker-Main-2/INFO]: Preparing spawn area: 89%
+[21:47:34] [Worker-Main-2/INFO]: Preparing spawn area: 90%
+[21:47:35] [Worker-Main-2/INFO]: Preparing spawn area: 90%
+[21:47:35] [Worker-Main-2/INFO]: Preparing spawn area: 90%
+[21:47:36] [Worker-Main-2/INFO]: Preparing spawn area: 90%
+[21:47:37] [Worker-Main-2/INFO]: Preparing spawn area: 90%
+[21:47:37] [Worker-Main-2/INFO]: Preparing spawn area: 90%
+[21:47:38] [Worker-Main-2/INFO]: Preparing spawn area: 90%
+[21:47:38] [Worker-Main-2/INFO]: Preparing spawn area: 90%
+[21:47:39] [Worker-Main-2/INFO]: Preparing spawn area: 90%
+[21:47:39] [Worker-Main-2/INFO]: Preparing spawn area: 90%
+[21:47:39] [Server thread/INFO]: Preparing spawn area: 90%
+[21:47:40] [Worker-Main-2/INFO]: Preparing spawn area: 91%
+[21:47:41] [Worker-Main-2/INFO]: Preparing spawn area: 91%
+[21:47:41] [Worker-Main-2/INFO]: Preparing spawn area: 91%
+[21:47:41] [Server thread/INFO]: Preparing spawn area: 91%
+[21:47:42] [Server thread/INFO]: Preparing spawn area: 92%
+[21:47:42] [Server thread/INFO]: Preparing spawn area: 92%
+[21:47:43] [Worker-Main-2/INFO]: Preparing spawn area: 93%
+[21:47:43] [Server thread/INFO]: Preparing spawn area: 93%
+[21:47:44] [Worker-Main-2/INFO]: Preparing spawn area: 93%
+[21:47:44] [Worker-Main-2/INFO]: Preparing spawn area: 94%
+[21:47:45] [Worker-Main-2/INFO]: Preparing spawn area: 94%
+[21:47:45] [Worker-Main-2/INFO]: Preparing spawn area: 94%
+[21:47:46] [Worker-Main-2/INFO]: Preparing spawn area: 94%
+[21:47:46] [Worker-Main-2/INFO]: Preparing spawn area: 94%
+[21:47:47] [Server thread/INFO]: Preparing spawn area: 95%
+[21:47:47] [Server thread/INFO]: Preparing spawn area: 95%
+[21:47:48] [Worker-Main-2/INFO]: Preparing spawn area: 95%
+[21:47:48] [Server thread/INFO]: Preparing spawn area: 96%
+[21:47:49] [Worker-Main-2/INFO]: Preparing spawn area: 96%
+[21:47:49] [Worker-Main-2/INFO]: Preparing spawn area: 96%
+[21:47:50] [Worker-Main-2/INFO]: Preparing spawn area: 96%
+[21:47:50] [Worker-Main-2/INFO]: Preparing spawn area: 97%
+[21:47:51] [Worker-Main-2/INFO]: Preparing spawn area: 97%
+[21:47:51] [Worker-Main-2/INFO]: Preparing spawn area: 97%
+[21:47:52] [Worker-Main-2/INFO]: Preparing spawn area: 98%
+[21:47:52] [Worker-Main-2/INFO]: Preparing spawn area: 98%
+[21:47:53] [Worker-Main-2/INFO]: Preparing spawn area: 98%
+[21:47:53] [Server thread/INFO]: Preparing spawn area: 98%
+[21:47:54] [Server thread/INFO]: Preparing spawn area: 99%
+[21:47:54] [Worker-Main-2/INFO]: Preparing spawn area: 99%
+[21:47:55] [Server thread/INFO]: Preparing spawn area: 99%
+[21:47:56] [Server thread/INFO]: Time elapsed: 101403 ms
+[21:47:56] [Server thread/INFO]: Done (102.308s)! For help, type "help"
+[21:47:58] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2118ms or 42 ticks behind
+[21:48:40] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 26680ms or 533 ticks behind
+[21:48:54] [Server thread/INFO]: Stopping the server
+[21:48:54] [Server thread/INFO]: Stopping server
+[21:48:54] [Server thread/INFO]: Saving players
+[21:48:54] [Server thread/INFO]: Saving worlds
+[21:48:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld

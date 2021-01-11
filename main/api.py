@@ -18,6 +18,7 @@ class APIRequest:
         self.Stats = None
         self.messages = []
         self.mc = False
+        self.ConfigDict = {}
         self.dir = os.path.dirname(os.path.dirname(
             os.path.realpath(__file__))) + "/server"  # None
 
@@ -65,27 +66,30 @@ class APIRequest:
             
     def RequestStatus(self):
         return self.Stats
-    
 
-'''
- I will efix configs later
- 
-    def ReadConfig(self):
-        if not os.path.isfile('PyConfig.conf'):
-            with open("PyAdmin.conf", "w") as f:
-                f.close()
-        else:
-            with open("PyAdmin.conf", "r") as f:
-                self.data = f.read()
+    def CreateConfig(self):
+        if not os.path.isfile("PyConfig.ini"):
+            with open("PyConfig.ini", "w") as file:
+                file.close()
     
-    def WriteConfig(self, write, value):
-        if not os.path.isfile('PyConfig.conf'):
-            with open("PyAdmin.conf", "w") as f:
-                f.close()
-        if os.path.isfile('PyConfig.conf'):
-            with open("PyAdmin.conf", "a") as f:
-                if not write in f.read():
-                    f.write(write + ":" + value)
-                else:
-                    return "Value already exists"
-'''
+    def WriteConfig(self, key, value):
+        if os.path.isfile("PyConig.ini"):
+            with open("PyConfig.ini", "a") as file:
+                file.write(key + ":" + value + "\n")
+        else:
+            self.CreateConfig()
+
+    def ReadConfig(self):
+        if os.path.isfile("PyConfig.ini"):
+            self.ConfigDict = {}
+            with open("PyConfig.ini", "r") as file:
+                lines = file.readlines()
+                file.seek(0)
+                for x in range(len(lines)):
+                    data = file.readline().strip("\n").split(":")
+                    self.ConfigDict[data[0]] = data[1]
+        else:
+            self.CreateConfig()
+
+    def ReturnConfig(self):
+        return self.ConfigDict
