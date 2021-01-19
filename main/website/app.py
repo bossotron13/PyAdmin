@@ -19,29 +19,19 @@ def index():
 
 @app.route("/start")
 def startServer():
-    Api.StartServer()
+    Api.SendCommand("start")
     return redirect('/')
 
 
 @app.route("/restart")
 def restartServer():
-    Api.RestartServer()
+    Api.SendCommand("restart")
     return redirect('/')
 
 
 @app.route("/stop")
 def stopServer():
-    Api.StopServer()
+    Api.SendCommand("stop")
     return redirect('/')
-
-
-'''
-@app.route("/apple", methods=['GET', 'POST'])
-def handle_form():
-    global ButtonPressed
-    ButtonPressed += 1
-    print(request.args)
-    return redirect('/')
-'''
 
 app.run(port=5000, host="192.168.1.146", threaded=True)
