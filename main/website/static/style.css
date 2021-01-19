@@ -12,12 +12,39 @@
     text-align: left;
 }
 
+.Body-Login {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#LoginButton {
+    margin-top: 20px;
+}
+
+.BodyLabel {
+    margin-right: 15%;
+}
+
+input[type=text], input[type=password] {
+  text-align: center;
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
 button {
     border: none;
     text-align: center;
     background-color: whitesmoke;
-    color: white;
+    color: black;
     padding: 12px 32px;
+    font-family: 'Montserrat';
+    font-size: 15px;
 }
 
 header h1 {

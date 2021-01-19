@@ -1,0 +1,42 @@
+<html>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
+
+<body>
+    <div class="Header">
+        <title>Pyadmin Login</title>
+        <h1 id="title">Pyadmin Dev</h1>
+    </div>
+
+    <div class="Body-Login">
+        <label class="BodyLabel" for="uname">Username</label>
+        <br>
+        <form method="POST" action="/">
+            <input type="text" placeholder="Enter username" name="uname" required>
+            <br>
+            <br>
+            <label class="BodyLabel" for="psw">Password</label>
+            <br>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <br>
+            <button id="LoginButton" onclick="checkSID()" name="login" value="login">Login</button>
+        </form>
+    </div>
+
+</body>
+<script>
+    function returnStats() {
+        return "{{ status }}"
+    }
+
+    function returnSID() {
+        return "{{ SessionID }}"
+    }
+</script>
+<link rel="stylesheet" type="text/css" href="../static/style.css" />
+<script src="{{ url_for('static', filename='login.js') }}"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+
+</html>

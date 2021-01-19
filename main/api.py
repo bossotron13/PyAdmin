@@ -33,6 +33,7 @@ class APIRequest:
         # Strings
         self.dir = os.path.dirname(os.path.dirname(
             os.path.realpath(__file__))) + "/server"  # None
+        self.ReadConfig()
 
     def StartServer(self):
         # Changes Dir so you can run java without path
@@ -87,7 +88,7 @@ class APIRequest:
                         while self.mc:
                             if self.process.poll() != None:
                                 self.Stats = list(self.AvalibleStats.keys())[
-                                    list(self.AvalibleStats.values()).index(x)]
+                                     list(self.AvalibleStats.values()).index(x)]
                                 self.mc = False
                     else:
                         self.Stats = list(self.AvalibleStats.keys())[

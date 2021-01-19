@@ -1,0 +1,3 @@
+function checkSID() {
+    print(returnSID())
+}
