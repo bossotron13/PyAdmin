@@ -1,4 +1,4 @@
-import threading, time, multiprocessing
+import threading, time, multiprocessing, sys
 
 def MainRunner():
     import main.main
@@ -10,6 +10,8 @@ def SetServer():
     import main.definitions as holder
     import main.website.ApiShare as server
     server.SetApi(holder.Server)
+    sys.argv.append("--myModuleParam")
+    sys.argv.append(server.returnApi())
 
 if __name__ == "__main__":
     threading.Thread(target=SetServer).start()

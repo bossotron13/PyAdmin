@@ -1,10 +1,23 @@
 from flask import Flask, render_template, request, redirect, url_for
-import logging, os, hashlib, random, string
-import main.website.ApiShare as ApiShare
+import logging
+import os
+import hashlib
+import random
+import string
+import sys
+#import main.website.ApiShare as ApiShare
 
 app = Flask(__name__)
 
-Api = ApiShare.returnApi()
+Api = None
+
+for px in sys.argv:
+    if px == '--myModuleParam':
+        idx = sys.argv.index(px)
+        sys.argv.pop(idx)  # remove option
+        Api = sys.argv[idx]
+        sys.argv.pop(idx)  # remove value
+
 
 SessionIDS = []
 
@@ -49,7 +62,9 @@ def restartServer():
 
 @app.route("/stop")
 def stopServer():
-    Api.SendCommand("stop")
+    Api.SendCommand("stop") 
     return redirect('/')
 
-app.run(port=5000, host="192.168.1.146", threaded=True)
+
+app.run(port=5000, host="127.0.0.1", threaded=True)
+#app.run(port=Api.ConfigDict["port"], host=Api.ConfigDict["binding-ip"], threaded=True)

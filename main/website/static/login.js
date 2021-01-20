@@ -1,3 +1,3 @@
 function checkSID() {
-    print(returnSID())
+    alert(returnSID())
 }

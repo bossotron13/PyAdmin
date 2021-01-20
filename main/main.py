@@ -11,10 +11,13 @@ cmds = {"/quit" : definitions.quitPy,
 def readServer():
     lastmsg = None
     while True:
-        if len(Server.messages) != 0:
-            if Server.messages[len(Server.messages)-1] != lastmsg:
-                print(Server.messages[len(Server.messages)-1])
-                lastmsg = Server.messages[len(Server.messages)-1]
+        if Server.messages:
+            if Server.RequestStatus() != "Offline":
+                print(Server.RequestStatus())
+                for x in Server.messages:
+                    print(Server.messages[Server.messages.index(x)])
+                lastmsg = Server.messages[0]
+                Server.messages.clear()
 
 Server.StartServer()
 
