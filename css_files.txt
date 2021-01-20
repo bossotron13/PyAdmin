@@ -1,0 +1,5 @@
+https://fonts.gstatic.com
+https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap
+https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100&display=swap
+http://127.0.0.1:5000/static/style.css
+http://127.0.0.1:5000/static/style.css
